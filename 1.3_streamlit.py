@@ -50,7 +50,7 @@ if st.session_state["authentication_status"]:
             st.image("https://www.shutterstock.com/image-photo/applause-support-success-business-team-600nw-2312975429.jpg")
 
     elif selection == "😺​ Les photos de mon chat":
-        st.audio(r"C:\Users\mosca\Desktop\Wild Code School\Streamlit_quêtes\cute-cat-meow-song-429568.mp3")
+        st.audio('cute-cat-meow-song-429568.mp3')
         st.write("Bienvenue sur mon album photo !")
         col1, col2, col3 = st.columns(3)
         with col1:
