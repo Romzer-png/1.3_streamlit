@@ -3,7 +3,7 @@ import streamlit as st
 from streamlit_authenticator import Authenticate
 from streamlit_option_menu import option_menu
 
-csv = pd.read_csv(r'C:\Users\mosca\Desktop\Wild Code School\Streamlit_quêtes\Dictionnaire.csv', sep = ";")
+csv = pd.read_csv('Dictionnaire.csv', sep = ";")
 df = pd.DataFrame(csv)
 dict_user = df.to_dict('records')
 
