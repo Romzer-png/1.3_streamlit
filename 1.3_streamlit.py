@@ -33,6 +33,8 @@ authenticator.login()
 
 
 
+
+
 if st.session_state["authentication_status"]:
 
     # ----- MENU -----
@@ -70,6 +72,7 @@ if st.session_state["authentication_status"]:
 
 elif st.session_state["authentication_status"] is False:
     st.error("Le username ou le password est/sont incorrect(s)")
-
+    st.caption("Identifiants pour la démonstration : user = 'root', password = '1234''(il y a pas bien une apostrophe après le 4)")
 elif st.session_state["authentication_status"] is None:
     st.warning('Les champs username et mot de passe doivent être remplis')
+    st.caption("Identifiants pour la démonstration : user = 'root', password = '1234''(il y a pas bien une apostrophe après le 4)")
